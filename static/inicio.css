@@ -143,8 +143,10 @@ var(--noche);
 .aviso-flotante strong { display: flex; justify-content: space-between; gap: 12px; font-size: .86rem; }
 .aviso-flotante small { font-weight: 500; color: #6b778c; }
 .aviso-flotante > span:last-child { flex: 1; }
-.aviso-icono { flex: none; width: 34px; height: 34px; border-radius: 9px; background: var(--noche); position: relative; }
-.aviso-icono::after { content: ""; position: absolute; inset: 10px; border-radius: 50%; background: var(--celeste); }
+/* El ícono del aviso es el del comercio (el sistema lo arma con su logo y su color), no el de Fidelizá */
+.aviso-icono { flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: #5a3420; }
+.aviso-icono .taza { width: 27px; height: 27px; fill: #f0c38c; }
+.aviso-icono .taza .asa { fill: none; stroke: #f0c38c; stroke-width: 3.4; }
 .portada-visual .aviso-flotante { position: absolute; z-index: 2; top: 0; left: -24px; width: min(320px, 92%); }
 
 /* La cinta de rubros que cruza entre la portada y lo que sigue */
