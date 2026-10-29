@@ -284,8 +284,8 @@ details p { color: var(--suave); margin: 10px 0 0; }
 
 /* WhatsApp: ícono en los botones y un botón fijo abajo a la derecha (solo si el contacto es wa.me). */
 .con-whatsapp .burbuja { width: 1.1em; height: 1.1em; flex: none; }
-.whatsapp-flotante { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px 11px 14px; border-radius: 999px; background: #25D366; color: var(--noche); font-weight: 800; font-size: 1rem; text-decoration: none; box-shadow: 0 8px 22px rgba(14, 31, 64, .28); transition: transform .2s var(--rebote); }
-.whatsapp-flotante .burbuja { width: 24px; height: 24px; }
+.whatsapp-flotante { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: #25D366; color: #fff; box-shadow: 0 6px 18px rgba(14, 31, 64, .3); transition: transform .2s var(--rebote); }
+.whatsapp-flotante .burbuja { width: 28px; height: 28px; }
 .whatsapp-flotante:hover { transform: translateY(-2px); }
 .whatsapp-flotante:focus-visible { outline: 3px solid var(--noche); outline-offset: 3px; }
 @media print { .whatsapp-flotante { display: none; } }
