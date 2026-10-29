@@ -125,7 +125,6 @@ var(--noche);
 .pw-qr svg { display: block; width: 112px; height: 112px; margin: 0 auto; }
 
 /* Lo que rodea al celular: el sello que gira, la nota "¡falta uno!" (va pegada al celular y apunta al lugar vacío) y el aviso */
-.pie-celular { position: absolute; bottom: 14px; left: 0; right: 0; margin: 0 auto; text-align: center; font-size: .8rem; color: rgba(201, 219, 236, .7); }
 .sello-giratorio { position: absolute; z-index: 3; left: -6px; bottom: 96px; width: 118px; height: 118px; filter: drop-shadow(0 14px 22px rgba(9, 21, 46, .45)); }
 .sello-giratorio .disco { fill: var(--celeste); }
 .sello-giratorio .anillo { transform-origin: 60px 60px; }
@@ -204,20 +203,16 @@ var(--noche);
 .pantalla-celu { margin: 0; justify-self: center; width: 100%; max-width: 330px; }
 .celu-marco.entero { width: 100%; border: 10px solid #1b2232; border-top-width: 26px; border-radius: 42px; position: relative; box-shadow: var(--sombra); }
 .celu-marco.entero::before { content: ""; position: absolute; top: -18px; left: 50%; width: 70px; height: 10px; margin-left: -35px; border-radius: 6px; background: #0b0f17; }
-.pantalla-celu figcaption, .panel-real + figcaption, .con-aviso figcaption, .campania-real figcaption { margin-top: 16px; color: var(--suave); font-size: .92rem; }
-.pantalla-celu figcaption span, .campania-real figcaption span { opacity: .8; }
 .panel-real { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--borde); box-shadow: 0 24px 50px -26px rgba(9, 21, 46, .45); background: #fff; }
 /* Lo que flota sobre una pantalla real (el aviso de ejemplo, la novedad) cuelga de su borde de abajo */
 .marco-flotante { position: relative; }
-.con-aviso { margin: 0; }
+.con-aviso { margin: 0; padding-bottom: 52px; }
 .aviso-flotante.en-panel { position: absolute; right: -10px; bottom: -44px; width: min(320px, 82%); transform: rotate(-1.5deg); }
-.con-aviso figcaption { margin-top: 62px; }
 #aviso p em { font-style: normal; font-weight: 600; color: var(--noche); }
 .libreta .movimientos { margin-top: 18px; transform: rotate(.8deg); }
-.campania-real { margin: 0; max-width: 400px; justify-self: center; width: 100%; }
+.campania-real { margin: 0; max-width: 400px; justify-self: center; width: 100%; padding-bottom: 76px; }
 .campania-real .panel-real { border-color: rgba(255, 255, 255, .15); }
 .novedad-real { position: absolute; right: -28px; bottom: -70px; width: 72%; height: auto; border-radius: 12px; box-shadow: 0 18px 36px -12px rgba(9, 21, 46, .7); transform: rotate(2deg); }
-.banda .campania-real figcaption { margin-top: 82px; color: var(--texto-noche); }
 
 /* El panel contado como la libreta del almacén: renglones, margen rojo y birome azul */
 .fondo-celeste { background: var(--celeste-claro); }
@@ -249,8 +244,6 @@ var(--noche);
   border: 3px solid #1f6fa8; color: #1f6fa8; font: 800 .62rem/1 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase;
   transform: rotate(-16deg); opacity: .85; mix-blend-mode: multiply;
 }
-.libreta figcaption { margin-top: 18px; color: var(--suave); font-size: .92rem; }
-.libreta figcaption span { opacity: .8; }
 
 /* Mensajes: el único bloque oscuro en el medio, del mismo azul que la portada */
 .banda { background: var(--noche); color: #d6e3f0; }
