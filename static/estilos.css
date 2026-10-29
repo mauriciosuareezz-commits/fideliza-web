@@ -120,6 +120,7 @@ details.plegable[open] > summary::after { transform: rotate(45deg); }
 .chip.compra { background: #e6f4ec; color: #1b6b3d; }
 .chip.canje { background: var(--celeste-claro); color: #155c8c; }
 .chip.correccion { background: #fdf1dc; color: #7a4b00; }
+.chip.regalo { background: #efe9fb; color: #5a3a9a; }
 .legal h2 { font-size: 1.15rem; margin: 1.4em 0 .4em; }
 .legal li { margin-bottom: .3em; }
 .panel-pie { text-align: center; color: var(--suave); font-size: .9rem; padding: 8px 16px 28px; }
